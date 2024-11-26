@@ -1,0 +1,41 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero {
+    background: url('') no-repeat center center;
+    background-size: cover;
+  }
+  
+  .highlight {
+    color: #00b0ff; /* Highlight color */
+  }
+  
+  .about img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skills .card {
+    transition: transform 0.3s ease;
+  }
+  
+  .skills .card:hover {
+    transform: scale(1.05);
+  }
+  
+
+  .App {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+  }
+  
+  .contact {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  

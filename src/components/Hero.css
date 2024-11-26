@@ -1,0 +1,52 @@
+/* Hero Section Styling */
+.hero {
+    background: linear-gradient(to bottom right, #141e30, #243b55); /* Smooth gradient */
+    color: #ffffff;
+    padding: 60px 20px;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Highlighted Text */
+  .hero .highlight {
+    color: #00d9ff; /* Bright accent color */
+    font-weight: bold;
+  }
+  
+  /* Social Icons Container */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  /* Individual Icons */
+  .social-icons .icon {
+    color: #ffffff;
+    font-size: 1.8rem;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  /* Hover Effects for Icons */
+  .social-icons .icon:hover {
+    transform: scale(1.2);
+    color: #00d9ff; /* Highlight color on hover */
+  }
+  
+  /* Button Styling */
+  .hero button {
+    background-color: #00d9ff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hero button:hover {
+    background-color: #00b3cc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  

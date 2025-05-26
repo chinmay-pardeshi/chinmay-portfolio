@@ -2,54 +2,45 @@ import React, { useState } from 'react';
 import './ProjectContainer.css';
 import ProjectCard from './ProjectCard';
 import Project1 from '../assets/Project1.jpg'; // Local image
-import Project3 from "../assets/Project3.png"
-import Project6 from "../assets/Project6.png"
-import Project5 from "../assets/Project5.png"
-import Project4 from "../assets/Project4.png"
-import Project2 from "../assets/Project2.png"
+import Project3 from "../assets/Project3.jpg"
+
+import Project6 from "../assets/Project6.jpg"
+import Project5 from "../assets/Project5.jpg"
+// import Project4 from "../assets/Project4.jpg"   
+  
+import Project2 from "../assets/Project2.jpg"
 
 const projects = [
   {
-    title: 'Robotics Club Website Development ',
+    title: 'Natural Language to SQL Generator',
     image: Project1, // Replace with imported image
-    link: 'http://sanjivani-robotics-website.netlify.app/',
-    details: `Developed a full-stack web application for the Robotics Club. The frontend was built using React.js, while
-              the backend was developed using Express.js and Node.js. Implemented user authentication using bcrypt
-              and JWT, along with body-parser for handling requests. The website features member profiles, event
-              management, and a contact system to streamline communication within the club.`,
+    link: 'https://github.com/chinmay-pardeshi/natural-language-sql-generator',
+    details: `Converts English questions into SQL queries using LangChain and LearnLM. Features a clean Streamlit interface for query generation and testing.`,
   },
-  {
-    title: 'Not mention ',
+   {
+    title: 'Speech-to-Text & Translation App',
     image: Project2, // Replace with imported image
-    link: '',
-    details: ``,
+    link: 'https://github.com/chinmay-pardeshi/speech-to-text-translator',
+    details: `A voice and audio transcription app that also translates content into Hindi, Marathi, or English. Built for multilingual accessibility.`,
   },
   {
-    title: 'Placement Management System',
-    image: Project3,
-    link: 'https://pratik9307.github.io/Placement_Management_System/',
-    details: `A Placement Management System is a web application designed to streamline and manage the
-             recruitment process for educational institutions or placement agencies. `,
+    title: 'YouTube Video Summarizer',
+    image: Project3, // Replace with imported image
+    link: 'https://github.com/chinmay-pardeshi/youtube-ai-video-summarizer',
+    details: `Summarizes YouTube transcripts into bullet points using Gemini Pro. Helps users quickly review long videos with accurate summarization.`,
   },
   {
-    title: 'Amazon Clone using ReactJS ',
-    image: Project4, // Replace with imported image
-    link: '',
-    details: `Creating an Amazon Clone using ReactJS is a project that involves replicating the basic functionalities of
-            the Amazon website, focusing on the frontend using ReactJS.`,
-  },
- 
-  {
-    title: 'Shoping cart App',
+    title: 'Gemini Chat with PDF',
     image: Project5, // Replace with imported image
-    link: 'https://shoping-cart-app-reactjs.netlify.app/',
-    details: `A simple shopping cart webpage using React.js allows users to browse a list of products, add them to a cart, and manage the cart items. The application is structured with reusable React components like a ProductList to display available products and a Cart to show items added by the user. State management is handled using React's useState hook to track the cart items and their quantities. The cart dynamically updates as users add or remove items or adjust quantities. Additionally, the total price is recalculated in real time. The app provides an interactive and responsive user experience, making it a perfect example of a beginner-friendly React project to learn about component-based design and state management.`,
+    link: 'https://github.com/chinmay-pardeshi/gemini-chat-with-pdf',
+    details: `Streamlit-based AI assistant that allows users to upload PDFs and ask questions about the content. Uses Google Gemini Pro to extract insights from documents like research papers, reports, or notes.`,
   },
-  {
-    title: 'Password Generator',
+  ,
+   {
+    title: 'Gemini Nutrition Analyzer',
     image: Project6, // Replace with imported image
-    link: 'https://pratik9307.github.io/Password-Generator02/',
-    details: `A Password Generator is a simple yet highly functional tool or application designed to create strong, random, and secure passwords for online accounts, applications, and other purposes. It helps users avoid weak or predictable passwords, thereby enhancing security against cyber threats like hacking or brute-force attacks.`,
+    link: 'https://github.com/chinmay-pardeshi/gemini-nutrition-analyzer',
+    details: `Built a Streamlit app using Gemini Pro Vision that analyzes food images and returns calorie and nutrition breakdown. Ideal for fitness tracking and diet planning.`,
   },
   
 ];

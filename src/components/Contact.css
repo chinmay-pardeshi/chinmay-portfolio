@@ -118,4 +118,174 @@
       font-size: 1.8rem;
     }
   }
+
+  
+
+  .contact-section {
+    padding: 80px 0;
+    background-color: #f4f4f4;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .contact-card {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .freelancer-info {
+    text-align: left;
+  }
+  
+  .freelancer-info ul {
+    padding-left: 20px;
+    list-style: none;
+  }
+  
+  .freelancer-info ul li {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Custom Button */
+  .btn-custom {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    width: 100%;
+    transition: 0.3s;
+    font-weight: bold;
+  }
+  
+  .btn-custom:hover {
+    background-color: #0056b3;
+  }
+  
+  /* ---------------- */
+  /* 📱 Responsive Media Queries */
+  /* ---------------- */
+  
+  /* Tablets & Small Screens (Max Width: 992px) */
+  @media (max-width: 992px) {
+    .contact-section {
+      padding: 60px 15px;
+    }
+  
+    .section-title {
+      font-size: 2.2rem;
+    }
+  
+    .contact-card {
+      padding: 25px;
+    }
+  
+    .freelancer-info {
+      padding: 20px;
+    }
+  
+    .btn-custom {
+      font-size: 17px;
+      padding: 12px;
+    }
+  }
+  
+  /* Mobile Devices (Max Width: 768px) */
+  @media (max-width: 768px) {
+    .contact-section {
+      padding: 50px 10px;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .contact-card,
+    .freelancer-info {
+      padding: 20px;
+    }
+  
+    .btn-custom {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    /* Stack columns for better mobile experience */
+    .row {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    /* Adjust spacing */
+    .contact-card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Extra Small Devices (Max Width: 576px) */
+  @media (max-width: 576px) {
+    .section-title {
+      font-size: 1.8rem;
+    }
+  
+    .contact-card {
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+  
+    .freelancer-info {
+      padding: 15px;
+    }
+  
+    .btn-custom {
+      font-size: 15px;
+      padding: 10px;
+    }
+  
+    /* Make text more readable on small screens */
+    .contact-card h3,
+    .freelancer-info h3 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Ultra Small Devices (Max Width: 400px) */
+  @media (max-width: 400px) {
+    .section-title {
+      font-size: 1.6rem;
+    }
+  
+    .contact-card,
+    .freelancer-info {
+      padding: 15px;
+    }
+  
+    .btn-custom {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    /* Adjust form fields for ultra-small screens */
+    .form-control {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
   

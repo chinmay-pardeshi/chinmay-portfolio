@@ -1,52 +1,145 @@
 /* Hero Section Styling */
 .hero {
-    background: linear-gradient(to bottom right, #141e30, #243b55); /* Smooth gradient */
-    color: #ffffff;
-    padding: 60px 20px;
-    font-family: "Roboto", sans-serif;
-    position: relative;
-    overflow: hidden;
+  background: linear-gradient(to bottom right, #141e30, #243b55); /* Smooth gradient */
+  color: #ffffff;
+  padding: 60px 20px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
   }
-  
-  /* Highlighted Text */
-  .hero .highlight {
-    color: #00d9ff; /* Bright accent color */
-    font-weight: bold;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  /* Social Icons Container */
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
   }
-  
-  /* Individual Icons */
-  .social-icons .icon {
-    color: #ffffff;
-    font-size: 1.8rem;
-    transition: transform 0.3s, color 0.3s;
+  50% {
+    transform: translateY(-10px);
   }
-  
-  /* Hover Effects for Icons */
-  .social-icons .icon:hover {
-    transform: scale(1.2);
-    color: #00d9ff; /* Highlight color on hover */
-  }
-  
-  /* Button Styling */
-  .hero button {
-    background-color: #00d9ff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .hero button:hover {
-    background-color: #00b3cc;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  }
-  
+}
+
+/* Advanced Animations */
+.animated-heading {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.animated-subheading {
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.animated-paragraph {
+  animation: fadeInUp 1.4s ease-in-out;
+}
+
+.animated-social {
+  animation: fadeInUp 1.6s ease-in-out;
+}
+
+.animated-button {
+  animation: fadeInUp 1.8s ease-in-out;
+}
+
+/* Highlighted Text */
+.hero .highlight {
+  color: #00d9ff; /* Bright accent color */
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 217, 255, 0.6);
+}
+
+/* Social Icons Container */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  animation: float 3s ease-in-out infinite; /* Floating animation */
+}
+
+/* Individual Icons */
+.social-icons .icon {
+  color: #ffffff;
+  font-size: 1.8rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+/* Hover Effects for Icons */
+.social-icons .icon:hover {
+  transform: scale(1.2);
+  color: #00d9ff; /* Highlight color on hover */
+  filter: drop-shadow(0 0 10px #00d9ff);
+}
+
+/* General Button Styling */
+.hero button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  padding: 10px 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Download Button (Primary, Solid, with Icon) */
+.download-button {
+  background: linear-gradient(135deg, #00d9ff, #0099cc); /* Gradient background */
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3);
+  animation: fadeInUp 1.8s ease-in-out; /* Fade-in animation */
+}
+
+.download-button:hover {
+  background: linear-gradient(135deg, #00b3cc, #0077aa); /* Darker gradient on hover */
+  transform: scale(1.05); /* Slight scaling on hover */
+  box-shadow: 0 6px 20px rgba(0, 217, 255, 0.5);
+}
+
+.download-icon {
+  font-size: 1.5rem;
+  animation: float 2s ease-in-out infinite; /* Subtle floating effect */
+}
+
+/* Let's Connect Button (Outlined, Sleek) */
+.connect-button {
+  background: transparent;
+  border: 2px solid #ffffff; /* White border */
+  color: #ffffff;
+  animation: fadeInUp 2s ease-in-out; /* Fade-in animation */
+}
+
+.connect-button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background on hover */
+  transform: translateY(-2px); /* Lift effect */
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2); /* Soft glow */
+}
+
+/* Hover Difference: Download vs Connect */
+.download-button:hover {
+  transform: scale(1.05);
+}
+
+.connect-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Buttons Spacing */
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}

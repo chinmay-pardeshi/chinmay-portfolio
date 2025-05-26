@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { motion } from "framer-motion";
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa"; // Import icons
-import "./Hero.css"
+import { FaLinkedin, FaGithub, FaEnvelope, FaDownload } from "react-icons/fa"; // Import icons
+import "./Hero.css";
 
 const Hero = () => {
   return (
@@ -15,19 +15,19 @@ const Hero = () => {
       <Container>
         <Row>
           <Col>
-            <h1>
-              Hello, I am <span className="highlight">Pratik Satalkar</span>
+            <h1 className="animated-heading">
+              Hello, I am <span className="highlight">Chinmay Pardeshi</span>
             </h1>
-            <h2>
+            <h2 className="animated-subheading">
               I’m a <span className="highlight">Full Stack Developer</span>
             </h2>
-            <p>
+            <p className="animated-paragraph">
               Building Bridges Between Front-End and Back-End, Transforming Ideas into Web Reality
             </p>
             {/* Social Icons */}
-            <div className="social-icons">
+            <div className="social-icons animated-social">
               <a
-                href="www.linkedin.com/in/pratiksatalkar"
+                href="https://www.linkedin.com/in/chinmay-pardeshi/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="icon"
@@ -35,7 +35,7 @@ const Hero = () => {
                 <FaLinkedin />
               </a>
               <a
-                href="https://github.com/Pratik9307"
+                href="https://github.com/chinmay-pardeshi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="icon"
@@ -43,13 +43,29 @@ const Hero = () => {
                 <FaGithub />
               </a>
               <a
-                href="satalkarpratik0@gmail.com"
+                href="mailto:pardeshichinmay16@gmail.com"
                 className="icon"
               >
                 <FaEnvelope />
               </a>
             </div>
-            <Button variant="primary" size="lg" href="#contact" className="mt-3">
+            {/* Button to download resume */}
+            <Button
+              variant="primary"
+              size="lg"
+              href="/resume/Chinmay-pardeshi.pdf" // Replace with the actual path to your resume
+              download="Chinmay_Pardeshi_Resume"                       //Pratik_Satalkar_Resume
+              className="mt-3 download-button"
+            >
+              <FaDownload className="download-icon" /> Download Resume
+            </Button>
+            {/* Button to connect */}
+            <Button
+              variant="outline-light"
+              size="lg"
+              href="#contact"
+              className="mt-3 ml-2 connect-button"
+            >
               Let's Connect
             </Button>
           </Col>
@@ -60,3 +76,4 @@ const Hero = () => {
 };
 
 export default Hero;
+// when i click on gmail it is not working 

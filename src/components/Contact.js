@@ -129,14 +129,11 @@ const Contact = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
             >
-              <Card className="p-4 shadow-lg">
+              {/* <Card className="p-4 shadow-lg">
                 <Card.Body>
                   <h3 className="text-center mb-3">Why Work With Me?</h3>
                   <p>
-                    Hi, I'm <strong>Chinmay</strong>, a professional freelancer
-                    specializing in **ReactJS, MERN Stack, and Frontend
-                    Development**. I have extensive experience in building
-                    high-quality web applications.
+                    Hi, I'm <strong>Chinmay</strong>, 
                   </p>
                   <ul>
                     <li>✅ **Expert in ReactJS, Next.js, and Tailwind CSS**</li>
@@ -158,7 +155,36 @@ const Contact = () => {
                     Let's build something great together! 🚀
                   </p>
                 </Card.Body>
+              </Card> */}
+              <Card className="p-4 shadow-lg">
+                <Card.Body>
+                  <h3 className="text-center mb-3">Why Work With Me?</h3>
+                  <p>
+                    Hi, I'm <strong>Chinmay</strong>,
+                  </p>
+                  <ul>
+                    <li>✅ <strong>Expert in Python, Scikit-learn, TensorFlow, and PyTorch</strong></li>
+                    <li>✅ <strong>Custom ML/DL Model Development (CNNs, Transformers, etc.)</strong></li>
+                    <li>✅ <strong>Data Preprocessing, Model Training & Evaluation</strong></li>
+                    <li>✅ <strong>Deployment of AI Models with Flask/FastAPI & Docker</strong></li>
+                    <li>✅ <strong>Client-Focused, Scalable AI/ML Solutions</strong></li>
+                  </ul>
+                  <h4 className="mt-3 text-center">📞 Contact Details</h4>
+                  <p>
+                    <strong>Name:</strong> Chinmay <br />
+                    <strong>Phone:</strong> <a href="tel:+918767840482">+91 87678 40482</a> <br />
+                    <strong>Email:</strong>{" "}
+                    <a href="mailto:pardeshichinmay16@gmail.com">
+                      pardeshichinmay16@gmail.com
+                    </a>
+                  </p>
+                  <p className="text-center">
+                    Let’s build intelligent solutions together! 🤖🚀
+                  </p>
+                </Card.Body>
               </Card>
+
+
             </motion.div>
           </Col>
         </Row>

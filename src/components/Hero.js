@@ -19,10 +19,10 @@ const Hero = () => {
               Hello, I am <span className="highlight">Chinmay Pardeshi</span>
             </h1>
             <h2 className="animated-subheading">
-              I’m a <span className="highlight">Full Stack Developer</span>
+              I’m a <span className="highlight">AI/ML Developer Bridging Algorithms and Real-World Problems, Turning Models into Smart Solutions </span>
             </h2>
             <p className="animated-paragraph">
-              Building Bridges Between Front-End and Back-End, Transforming Ideas into Web Reality
+              Bridging Data and Intelligence, Turning Algorithms into Real-World Impact
             </p>
             {/* Social Icons */}
             <div className="social-icons animated-social">

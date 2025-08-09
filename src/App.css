@@ -4,7 +4,9 @@ body {
   }
   
   .hero {
-    background: url('') no-repeat center center;
+    background: no-repeat center center;
+
+    /* background: url('') no-repeat center center; */
     background-size: cover;
   }
   

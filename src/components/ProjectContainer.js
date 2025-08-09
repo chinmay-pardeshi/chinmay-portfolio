@@ -2,48 +2,59 @@ import React, { useState } from 'react';
 import './ProjectContainer.css';
 import ProjectCard from './ProjectCard';
 import Project1 from '../assets/Project1.jpg'; // Local image
-import Project3 from "../assets/Project3.jpg"
-
-import Project6 from "../assets/Project6.jpg"
-import Project5 from "../assets/Project5.jpg"
-// import Project4 from "../assets/Project4.jpg"   
-  
 import Project2 from "../assets/Project2.jpg"
+import Project3 from "../assets/Project3.jpg"
+import Project4 from "../assets/Project4.jpg"
+import Project5 from "../assets/Project5.jpg"
+import Project6 from "../assets/Project6.jpg"
+import Project7 from "../assets/Project7.jpg"
+// import Project4 from "../assets/Project4.jpg"
 
 const projects = [
   {
-    title: 'Natural Language to SQL Generator',
-    image: Project1, // Replace with imported image
-    link: 'https://github.com/chinmay-pardeshi/natural-language-sql-generator',
-    details: `Converts English questions into SQL queries using LangChain and LearnLM. Features a clean Streamlit interface for query generation and testing.`,
-  },
-   {
-    title: 'Speech-to-Text & Translation App',
-    image: Project2, // Replace with imported image
-    link: 'https://github.com/chinmay-pardeshi/speech-to-text-translator',
-    details: `A voice and audio transcription app that also translates content into Hindi, Marathi, or English. Built for multilingual accessibility.`,
+    title: 'Smart ATS Resume Scanner',
+    image: Project1,
+    link: 'https://smart-ats-resume-scanner-version1.streamlit.app/',
+    details: `An AI-powered resume evaluator that analyzes your resume against job descriptions using Google Gemini Pro. It gives feedback and optimization tips to improve ATS compatibility and help job seekers stand out.`,
   },
   {
-    title: 'YouTube Video Summarizer',
-    image: Project3, // Replace with imported image
-    link: 'https://github.com/chinmay-pardeshi/youtube-ai-video-summarizer',
-    details: `Summarizes YouTube transcripts into bullet points using Gemini Pro. Helps users quickly review long videos with accurate summarization.`,
+    title: 'Gemini Nutrition Analyzer',
+    image: Project2,
+    link: 'https://gemini-nutrition-analyzer-version1.streamlit.app/',
+    details: `Upload food images and get a detailed calorie and nutritional breakdown using Google Gemini Vision—perfect for tracking meals and planning diets.`,
   },
   {
     title: 'Gemini Chat with PDF',
-    image: Project5, // Replace with imported image
-    link: 'https://github.com/chinmay-pardeshi/gemini-chat-with-pdf',
-    details: `Streamlit-based AI assistant that allows users to upload PDFs and ask questions about the content. Uses Google Gemini Pro to extract insights from documents like research papers, reports, or notes.`,
+    image: Project3,
+    link: 'https://gemini-chat-with-pdf-version1.streamlit.app/',
+    details: `Upload a PDF—like research papers, reports, or notes—and ask questions using Google Gemini Pro for intelligent insights and summaries.`,
   },
-  ,
-   {
-    title: 'Gemini Nutrition Analyzer',
-    image: Project6, // Replace with imported image
-    link: 'https://github.com/chinmay-pardeshi/gemini-nutrition-analyzer',
-    details: `Built a Streamlit app using Gemini Pro Vision that analyzes food images and returns calorie and nutrition breakdown. Ideal for fitness tracking and diet planning.`,
+  {
+    title: 'Gemini Vision Chat',
+    image: Project4,
+    link: 'https://gemini-vision-chat-version1.streamlit.app/',
+    details: `Interact directly with images using natural language. Upload an image and have a conversational assistant powered by Gemini Vision to analyze and discuss it.`,
   },
-  
+  {
+    title: 'Gemini Streamlit Chatbot',
+    image: Project5,
+    link: 'https://gemini-app-chatbot-version1.streamlit.app/',
+    details: `A Streamlit-based conversational AI chatbot with persistent memory, powered by Google’s Gemini, for context-aware and continuous dialogues.`,
+  },
+  {
+    title: 'YouTube AI Video Summarizer',
+    image: Project6,
+    link: 'https://youtube-ai-video-summarizer-version.streamlit.app/',
+    details: `Paste a YouTube video link, and get key bullet-point summaries of the transcript using Gemini Pro—great for quickly reviewing lengthy videos.`,
+  },
+  {
+    title: 'Speech-to-Text & Translation App',
+    image: Project7,
+    link: 'https://speech-to-text-translator-version1.streamlit.app/',
+    details: `Transcribe voice or audio input, then translate it seamlessly into Hindi, Marathi, or English for accessible multilingual communication.`,
+  },
 ];
+
 
 const ProjectContainer = () => {
   const [selectedProject, setSelectedProject] = useState(null);

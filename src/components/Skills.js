@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import "./skills.css";
 
 // Importing React Icons
-import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaPython, FaJava } from "react-icons/fa";
-import { SiJavascript, SiFigma, SiBootstrap, SiTailwindcss, SiMongodb, SiExpress, SiMysql, SiPhp, SiNumpy, SiPandas, SiScikitlearn, SiTensorflow, SiPytorch, SiPowerbi, SiTableau, SiJupyter, SiGooglecolab, SiDocker, SiGit } from "react-icons/si";
-import { MdSecurity, MdOutlineRouter } from "react-icons/md";
+import {  FaPython, FaJava } from "react-icons/fa";
+import {  SiMysql, SiNumpy, SiPandas, SiScikitlearn, SiTensorflow, SiPytorch, SiPowerbi, SiTableau, SiJupyter, SiGooglecolab, SiDocker, SiGit } from "react-icons/si";
+import { } from "react-icons/md";
 
 // const skills = [
 //   { name: "HTML", icon: <FaHtml5 size={50} style={{ color: "#E34F26" }} />, url: "https://developer.mozilla.org/en-US/docs/Web/HTML" },

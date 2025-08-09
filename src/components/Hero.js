@@ -53,7 +53,7 @@ const Hero = () => {
             <Button
               variant="primary"
               size="lg"
-              href="/resume/Chinmay-pardeshi.pdf" // Replace with the actual path to your resume
+              href="/resume/chinmay-pardeshi.pdf" // Replace with the actual path to your resume
               download="Chinmay_Pardeshi_Resume"                       //Pratik_Satalkar_Resume
               className="mt-3 download-button"
             >
